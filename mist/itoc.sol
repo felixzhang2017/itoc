@@ -276,7 +276,7 @@ contract FreezableToken is StandardToken, Ownable {
 contract ITOC is Claimable, Contactable, HasNoEther, FreezableToken {
     // @dev Constructor initial token info
     function ITOC(){
-        uint256 _decimals = 18;
+        uint256 _decimals = 8;
         uint256 _supply = 100000000*(10**_decimals);
 
         _totalSupply = _supply;
